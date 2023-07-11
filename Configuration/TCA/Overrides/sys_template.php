@@ -8,6 +8,6 @@ call_user_func(function () {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
         $extensionKey,
         'Configuration/TypoScript',
-        'UCPH TYPO3 content element Modals'
+        'UCPH TYPO3 content element "Modals"'
     );
 });

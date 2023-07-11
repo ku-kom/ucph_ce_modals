@@ -1,10 +1,10 @@
 <?php
 
 /*
- * This file is part of the package UniversityOfCopenhagen\UcphCeModals.
- *
+ * This file is part of the package ucph_ce_image.
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
+ * University of Copenhagen.
  */
 
 defined('TYPO3') or die('Access denied.');
@@ -39,7 +39,7 @@ call_user_func(function ($extKey ='ucph_ce_modals', $contentType ='ucph_ce_modal
 
     // New palette for modal content
     $GLOBALS['TCA']['tt_content']['palettes']['modals_content'] = array(
-        'showitem' => 'tx_ucph_ce_modals_button_label, --linebreak--, tx_ucph_ce_modals_modal_title, --linebreak--, image, --linebreak--, bodytext, --linebreak--, tx_ucph_ce_modals_type, --linebreak--, tx_ucph_ce_modals_content_elements','canNotCollapse' => 1
+        'showitem' => 'tx_ucph_ce_modals_button_label, --linebreak--, tx_ucph_ce_modals_modal_title, --linebreak--, bodytext, --linebreak--, image, --linebreak--, tx_ucph_ce_modals_type, --linebreak--, tx_ucph_ce_modals_content_elements','canNotCollapse' => 1
     );
 
     // Configure element type
