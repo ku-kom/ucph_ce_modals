@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Settings</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <size>
+                        <TCEforms>
+                            <label>LLL:EXT:ucph_ce_modals/Resources/Private/Language/locallang_be.xlf:modal_size</label>
+                            <description>LLL:EXT:ucph_ce_modals/Resources/Private/Language/locallang_be.xlf:modal_size_desc</description>
+                            <exclude>true</exclude>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:ucph_ce_modals/Resources/Private/Language/locallang_be.xlf:modal_size_sm</numIndex>
+                                        <numIndex index="1">modal-sm</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ucph_ce_modals/Resources/Private/Language/locallang_be.xlf:modal_size_medium</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:ucph_ce_modals/Resources/Private/Language/locallang_be.xlf:modal_size_default</numIndex>
+                                        <numIndex index="1">modal-lg</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">LLL:EXT:ucph_ce_modals/Resources/Private/Language/locallang_be.xlf:modal_size_xl</numIndex>
+                                        <numIndex index="1">modal-xl</numIndex>
+                                    </numIndex>
+                                </items>
+                                <default>modal-lg</default>
+                            </config>
+                        </TCEforms>
+                    </size>
+                    <center>
+                        <TCEforms>
+                            <label>LLL:EXT:ucph_ce_modals/Resources/Private/Language/locallang_be.xlf:modal_center</label>
+                            <exclude>true</exclude>
+                            <config>
+                                <type>check</type>
+                                <renderType>checkboxToggle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0"></numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                </items>
+                                <default></default>
+                            </config>
+                        </TCEforms>
+                    </center>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

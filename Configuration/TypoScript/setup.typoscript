@@ -1,0 +1,62 @@
+##############################################
+####### CTYPE: KU SWIPERJS SLIDESHOW #########
+##############################################
+
+tt_content.ucph_ce_modals >
+tt_content.ucph_ce_modals =< lib.contentElement
+tt_content.ucph_ce_modals {
+
+    ################
+    ### TEMPLATE ###
+    ################
+    templateName = Modal
+    templateRootPaths {
+        10 = EXT:ucph_ce_modals/Resources/Private/Templates/
+        20 = {$ucph_ce_modals.templates.templateRootPath}
+    }
+	partialRootPaths {
+		10 = EXT:ucph_ce_modals/Resources/Private/Partials/
+        20 = {$ucph_ce_modals.templates.partialRootPath}
+	}
+
+    ##########################
+    ### DATA PREPROCESSING ###
+    ##########################
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+        20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        20 {
+            references.fieldName = image
+            as = image
+        }
+        30 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        30 {
+            if.isTrue.field = tx_ucph_ce_modals_content_elements
+            table = tt_content
+            uidInList.field = tx_ucph_ce_modals_content_elements
+            pidInList = 0
+            orderBy = sorting
+            as = records
+        }
+    }
+}
+
+##########################
+#### OPTION TO ADD CSS ###
+##########################
+lib.ucph_ce_modals.pagecss = TEXT
+lib.ucph_ce_modals.pagecss {
+    if.isTrue = {$ucph_ce_modals.assets.extraCss}
+    value = {$ucph_ce_modals.assets.extraCss}
+    htmlSanitize = 1
+}
+
+##########################
+#### OPTION TO ADD JS ####
+##########################
+lib.ucph_ce_modals.pagejs = TEXT
+lib.ucph_ce_modals.pagejs {
+    if.isTrue = {$ucph_ce_modals.assets.extraJs}
+    value = {$ucph_ce_modals.assets.extraJs}
+    htmlSanitize = 1
+}

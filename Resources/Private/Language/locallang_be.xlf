@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2023-01-15UTC07:12:052">
+        <header>
+        </header>
+        <body>
+        <trans-unit id="modal_title">
+            <source>Modal</source>
+        </trans-unit>
+        <trans-unit id="modal_desc">
+            <source>Add images and text to create a modal popup</source>
+        </trans-unit>
+        <trans-unit id="modal_content_title">
+            <source>Modal popup with content elements</source>
+        </trans-unit>
+        <trans-unit id="modal_content_desc">
+            <source>Add existing content to create a modal popup</source>
+        </trans-unit>
+        <trans-unit id="settings">
+            <source>Modal settings</source>
+        </trans-unit>
+        <trans-unit id="advanced">
+            <source>General settings</source>
+        </trans-unit>
+        <trans-unit id="button_label">
+            <source>Trigger button text</source>
+        </trans-unit>
+        <trans-unit id="button_label_description">
+            <source>Button to click on to open the modal popup</source>
+        </trans-unit>
+        <trans-unit id="modal_header">
+            <source>Modal title text</source>
+        </trans-unit>
+        <trans-unit id="modal_content">
+            <source>Modal text content</source>
+        </trans-unit>
+        <trans-unit id="modal_content_settings">
+            <source>Modal content</source>
+        </trans-unit>
+        <trans-unit id="modal_type">
+            <source>Enable option to add existing content</source>
+        </trans-unit>
+         <trans-unit id="modal_type_desc">
+            <source>If enabled, options to add existing content elements will be avaliable below.</source>
+        </trans-unit>
+        <trans-unit id="modal_default">
+            <source>Only text and/or image (default)</source>
+        </trans-unit>
+        <trans-unit id="modal_records">
+            <source>Add existing content</source>
+        </trans-unit>
+        <trans-unit id="modal_size">
+            <source>Modal size (width)</source>
+        </trans-unit>
+        <trans-unit id="modal_size_desc">
+            <source>Note: Modals are always 100% wide on mobile</source>
+        </trans-unit>
+        <trans-unit id="modal_size_sm">
+            <source>Small</source>
+        </trans-unit>
+        <trans-unit id="modal_size_default">
+            <source>Default</source>
+        </trans-unit>
+        <trans-unit id="modal_size_medium">
+            <source>Medium</source>
+        </trans-unit>
+        <trans-unit id="modal_size_lg">
+            <source>Large</source>
+        </trans-unit>
+        <trans-unit id="modal_size_xl">
+            <source>Extra large</source>
+        </trans-unit>
+        <trans-unit id="modal_media">
+            <source>Add image</source>
+        </trans-unit>
+        <trans-unit id="modal_center">
+            <source>Vertically center the modal on the page</source>
+        </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,16 @@
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+mod.wizards.newContentElement.wizardItems.interactive {
+    elements {
+        ucph_ce_modals {
+            iconIdentifier = ucph-ce-modals-icon
+            title = LLL:EXT:ucph_ce_modals/Resources/Private/Language/locallang_be.xlf:modal_title
+            description = LLL:EXT:ucph_ce_modals/Resources/Private/Language/locallang_be.xlf:modal_desc
+            tt_content_defValues {
+                CType = ucph_ce_modals
+            }
+        }
+    }
+    show := addToList(ucph_ce_modals)
+}

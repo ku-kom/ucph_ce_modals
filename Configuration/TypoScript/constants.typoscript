@@ -1,0 +1,16 @@
+ucph_ce_modals {
+    templates {
+        # cat=UCPH CE Modals/file; type=string; label=Layout Root Path: Path to templates (with a trailing slash).
+        templateRootPath = EXT:ucph_ce_modals/Resources/Private/Templates/
+        # cat=UCPH CE Modals/file; type=string; label=Partial Root Path: Path to partials (with a trailing slash).
+        partialRootPath = EXT:ucph_ce_modals/Resources/Private/Partials/
+        # cat=UCPH CE Modals/file; type=string; label=Layout Root Path: Path to layout (with a trailing slash).
+        layoutRootPath = EXT:ucph_ce_modals/Resources/Private/Layouts/
+    }
+    assets {
+        # cat=UCPH CE Modals/Assets/; type=string; label=CSS assets: Path to stylesheet.
+        extraCss =
+        # cat=UCPH CE Modals/Assets/; type=string; label=JavaScript assets: Path to javaScript file.
+        extraJs = 
+    }
+}
