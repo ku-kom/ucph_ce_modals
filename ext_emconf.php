@@ -8,7 +8,7 @@
  */
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'KU Bootstrap modals',
+    'title' => 'UCPH TYPO3 content element "Modals"',
     'description' => 'Provides a content element for creating dynamic modal popups for any website running Bootstrap 5.',
     'category' => 'templates',
     'constraints' => [
