@@ -8,7 +8,7 @@
             <source>Modal</source>
         </trans-unit>
         <trans-unit id="modal_desc">
-            <source>Add images and text to create a modal popup</source>
+            <source>Create a modal with text, images and/or existing content.</source>
         </trans-unit>
         <trans-unit id="modal_content_title">
             <source>Modal popup with content elements</source>
