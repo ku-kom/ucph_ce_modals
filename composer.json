@@ -1,5 +1,5 @@
 {
-    "name": "university-of-copenhagen/ucph-ce-modals",
+    "name": "university-of-copenhagen/ucph-content-modals",
     "type": "typo3-cms-extension",
     "description": "Provides a content element for creating dynamic modal popups for any website running Bootstrap 5.",
     "homepage": "https://www.ku.dk/",
@@ -7,12 +7,12 @@
     "keywords": ["TYPO3 CMS"],
     "autoload": {
         "psr-4": {
-            "UniversityOfCopenhagen\\UcphCeModals\\": "Classes/"
+            "UniversityOfCopenhagen\\UcphContentModals\\": "Classes/"
         }
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "ucph_ce_modals"
+            "extension-key": "ucph_content_modals"
         }
     }
 }

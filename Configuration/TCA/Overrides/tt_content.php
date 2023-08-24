@@ -9,7 +9,7 @@
 
 defined('TYPO3') or die('Access denied.');
 
-call_user_func(function ($extKey ='ucph_ce_modals', $contentType ='ucph_ce_modals') {
+call_user_func(function ($extKey ='ucph_content_modals', $contentType ='ucph_content_modals') {
     // Add Content Element
     if (!is_array($GLOBALS['TCA']['tt_content']['types'][$contentType] ?? false)) {
         $GLOBALS['TCA']['tt_content']['types'][$contentType] = [];
@@ -18,7 +18,7 @@ call_user_func(function ($extKey ='ucph_ce_modals', $contentType ='ucph_ce_modal
     // Add content element PageTSConfig
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         $contentType,
-        'Configuration/TsConfig/Page/ucph_ce_modals.tsconfig',
+        'Configuration/TsConfig/Page/ucph_content_modals.tsconfig',
         'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:modal_title'
     );
 
@@ -39,7 +39,7 @@ call_user_func(function ($extKey ='ucph_ce_modals', $contentType ='ucph_ce_modal
 
     // New palette for modal content
     $GLOBALS['TCA']['tt_content']['palettes']['modals_content'] = array(
-        'showitem' => 'tx_ucph_ce_modals_button_label, --linebreak--, tx_ucph_ce_modals_modal_title, --linebreak--, bodytext, --linebreak--, image, --linebreak--, tx_ucph_ce_modals_type, --linebreak--, tx_ucph_ce_modals_content_elements','canNotCollapse' => 1
+        'showitem' => 'tx_ucph_content_modals_button_label, --linebreak--, tx_ucph_content_modals_modal_title, --linebreak--, bodytext, --linebreak--, image, --linebreak--, tx_ucph_content_modals_type, --linebreak--, tx_ucph_content_modals_content_elements','canNotCollapse' => 1
     );
 
     // Configure element type
@@ -79,7 +79,7 @@ call_user_func(function ($extKey ='ucph_ce_modals', $contentType ='ucph_ce_modal
     );
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-        'tx_ucph_ce_modals_button_label' => [
+        'tx_ucph_content_modals_button_label' => [
             'exclude' => true,
             'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:button_label',
             'description' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:button_label_description',
@@ -89,7 +89,7 @@ call_user_func(function ($extKey ='ucph_ce_modals', $contentType ='ucph_ce_modal
                 'eval' => 'trim,required'
             ],
         ],
-        'tx_ucph_ce_modals_modal_title' => [
+        'tx_ucph_content_modals_modal_title' => [
             'exclude' => true,
             'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:modal_header',
             'config' => [
@@ -98,7 +98,7 @@ call_user_func(function ($extKey ='ucph_ce_modals', $contentType ='ucph_ce_modal
                 'eval' => 'trim,required'
             ],
         ],
-        'tx_ucph_ce_modals_type' => [
+        'tx_ucph_content_modals_type' => [
             'exclude' => true,
             'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:modal_type',
             'description' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:modal_type_desc',
@@ -114,8 +114,8 @@ call_user_func(function ($extKey ='ucph_ce_modals', $contentType ='ucph_ce_modal
                 ],
             ],
         ],
-        'tx_ucph_ce_modals_content_elements' => [
-             'displayCond' =>'FIELD:tx_ucph_ce_modals_type:=:1',
+        'tx_ucph_content_modals_content_elements' => [
+             'displayCond' =>'FIELD:tx_ucph_content_modals_type:=:1',
              'exclude' => true,
              'label' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:modal_records',
              'config' => [
@@ -203,7 +203,7 @@ call_user_func(function ($extKey ='ucph_ce_modals', $contentType ='ucph_ce_modal
     // Add flexForms for content element configuration
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
         '*',
-        'FILE:EXT:' . $extKey . '/Configuration/FlexForms/UcphCeModals.xml',
+        'FILE:EXT:' . $extKey . '/Configuration/FlexForms/UcphContentModals.xml',
         $extKey
     );
 });

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the package ucph_ce_modals.
+ * This file is part of the package ucph_content_modals.
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
  * Sep 2022 Nanna Ellegaard, University of Copenhagen.
@@ -19,6 +19,6 @@ $typo3VersionNumber = VersionNumberUtility::convertVersionNumberToInteger(
 // Only include page.tsconfig if TYPO3 version is below 12 so that it is not imported twice.
 if ($typo3VersionNumber < 12000000) {
     ExtensionManagementUtility::addPageTSConfig('
-      @import "EXT:ucph_ce_modals/Configuration/page.tsconfig"
+      @import "EXT:ucph_content_modals/Configuration/page.tsconfig"
    ');
 }

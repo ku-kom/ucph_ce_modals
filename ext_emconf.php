@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the package ucph_ce_modals.
+ * This file is part of the package ucph_content_modals.
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
  * University of Copenhagen.
