@@ -11,7 +11,7 @@
                 </TCEforms>
                 <type>array</type>
                 <el>
-                    <size>
+                    <settings.size>
                         <TCEforms>
                             <label>LLL:EXT:ucph_content_modals/Resources/Private/Language/locallang_be.xlf:modal_size</label>
                             <description>LLL:EXT:ucph_content_modals/Resources/Private/Language/locallang_be.xlf:modal_size_desc</description>
@@ -40,8 +40,8 @@
                                 <default>modal-lg</default>
                             </config>
                         </TCEforms>
-                    </size>
-                    <center>
+                    </settings.size>
+                    <settings.center>
                         <TCEforms>
                             <label>LLL:EXT:ucph_content_modals/Resources/Private/Language/locallang_be.xlf:modal_center</label>
                             <exclude>true</exclude>
@@ -57,7 +57,7 @@
                                 <default></default>
                             </config>
                         </TCEforms>
-                    </center>
+                    </settings.center>
                 </el>
             </ROOT>
         </sDEF>

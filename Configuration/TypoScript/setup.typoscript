@@ -19,6 +19,13 @@ tt_content.ucph_content_modals {
         20 = {$ucph_content_modals.templates.partialRootPath}
 	}
 
+    variables {
+        ucph_content_modal_width = TEXT
+        ucph_content_modal_width.data = flexform: pi_flexform:settings.size
+        ucph_content_modal_center = TEXT
+        ucph_content_modal_center.data = flexform: pi_flexform:settings.center
+    }
+
     ##########################
     ### DATA PREPROCESSING ###
     ##########################
